@@ -1,0 +1,148 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+html{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 16px;
+}
+.logo img{
+    margin: 20px;
+}
+.hero-image{
+    margin:10px 0px;
+    max-width: auto;
+    object-fit: contain;
+}
+.content h1{
+    text-align: center;
+    font-size: 40px;
+    margin: 30px 0px;
+    letter-spacing: 0.5rem;
+    line-height:3rem;
+}
+.content h1 span{
+    color:  hsl(0, 36%, 70%);
+    font-weight: 10; 
+}
+.content p{
+    font-size: 10px;
+    color:  hsl(0, 36%, 70%);
+    font-size: 15px;
+    margin: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+
+/*submit form*/
+.submit{
+    white-space: nowrap;
+    margin: 2rem 2rem;
+    display: flex;
+
+}
+.submit input{
+    height: 3rem;
+    width: 90%;
+    padding-left: 2rem;
+    color: hsl(0, 37%, 73%);
+    border: 0.1rem solid   hsl(0, 25%, 77%);
+    border-radius: 2rem;
+   
+    
+}
+.submit ::placeholder{
+color:  hsl(0, 27%, 80%);
+}
+.submit button{
+    height: 3rem;
+    width: 20%;
+    margin-left: -3rem;
+    border-radius:2rem;
+    border: 0.1rem solid hsl(0, 28%, 77%);
+    background-image:linear-gradient(to right,  hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+ 
+}
+
+/*for mobile*/
+@media(max-width:375px){
+    .hero-image-desktop{
+        display: none;
+    }
+    
+}
+
+/*responsive for desktop*/
+@media(min-width:376px) and (max-width:1440px){
+ 
+    .hero-image{
+        display: none;
+     }
+
+ body{
+     display: flex;
+     width: 100vw;
+     
+ }
+.main{
+    float: left;
+    height: 100vh;
+    width: 55vw;
+    margin: 50px;
+   
+   
+ }
+.logo img{
+   
+    width: 10rem;
+    margin: 2rem;
+    width: 15rem;
+}
+.content{
+    text-align: left;
+    height: 100vh;
+    margin: 2rem;
+}
+.content h1{
+    text-align: left;
+    margin-top: 8rem;
+    font-size: 4rem;
+    line-height: 5rem;
+}
+.content p{
+    margin-top: 2rem;
+    margin-left: 0rem;
+    margin-right: 6rem;
+    text-align: left;
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
+.submit{
+    text-align: left;
+    padding: 0rem;
+    margin-left: 0rem;
+    margin-top: 4rem;
+    margin-right: 6rem;
+}
+.submit input{
+    padding: 2rem 4rem;
+    font-size: 1.5rem;
+    color:hsl(0, 37%, 73%) ;
+}
+.submit button{
+    padding: 2rem 4rem;
+}
+.submit img{
+    vertical-align: middle;
+}
+
+.hero-image-desktop{
+  width: 45vw;
+  height: 100vh;
+  object-fit: cover;
+    }
+}
+
+
